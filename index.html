@@ -1,0 +1,200 @@
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YAMI STUDIO | حلول رقمية</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg:#08080d;
+--card:#111119;
+--purple:#8b5cf6;
+--light:#b69aff;
+--text:#fff;
+--muted:#9999aa;
+}
+body{background:var(--bg);color:var(--text);font-family:'Cairo',sans-serif}
+a{text-decoration:none;color:inherit}
+.container{width:90%;max-width:1200px;margin:auto}
+header{height:85px;display:flex;align-items:center;border-bottom:1px solid #ffffff12}
+nav{display:flex;justify-content:space-between;align-items:center;width:100%}
+.logo{font-size:27px;font-weight:900;letter-spacing:2px}
+.logo span{color:var(--purple)}
+.links{display:flex;gap:30px;color:#bbb;font-size:14px}
+.links a:hover{color:var(--light)}
+.btn{background:var(--purple);padding:12px 25px;border-radius:10px;font-weight:700;transition:.3s}
+.btn:hover{background:#7040d8;transform:translateY(-3px)}
+.hero{min-height:650px;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:450px;height:450px;background:#7438df22;filter:blur(100px);border-radius:50%;left:5%;top:10%}
+.hero-content{position:relative;max-width:750px}
+.badge{display:inline-block;border:1px solid #8b5cf655;color:var(--light);padding:8px 18px;border-radius:30px;font-size:13px;margin-bottom:25px}
+h1{font-size:clamp(38px,6vw,72px);line-height:1.4;font-weight:900}
+h1 span{color:var(--purple)}
+.hero p{color:var(--muted);font-size:17px;line-height:2;margin:20px 0 32px;max-width:600px}
+.hero-buttons{display:flex;gap:15px;flex-wrap:wrap}
+.outline{border:1px solid #ffffff30;padding:12px 25px;border-radius:10px}
+section{padding:90px 0}
+.section-title{text-align:center;margin-bottom:50px}
+.section-title h2{font-size:36px;font-weight:900}
+.section-title p{color:var(--muted);margin-top:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid #ffffff10;padding:30px;border-radius:18px;transition:.3s}
+.card:hover{border-color:var(--purple);transform:translateY(-7px)}
+.icon{width:55px;height:55px;background:#8b5cf622;border-radius:14px;display:grid;place-items:center;font-size:25px;margin-bottom:22px}
+.card h3{font-size:20px;margin-bottom:12px}
+.card p{color:var(--muted);line-height:1.9;font-size:14px}
+.projects{background:#0d0d14}
+.project{background:var(--card);border:1px solid #ffffff10;border-radius:18px;overflow:hidden}
+.project-image{height:190px;background:linear-gradient(135deg,#26134d,#111119);display:grid;place-items:center;font-size:45px}
+.project-info{padding:22px}
+.project-info p{color:var(--muted);font-size:13px;margin-top:8px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about-box{background:linear-gradient(135deg,#241345,#101019);border:1px solid #8b5cf633;padding:50px;border-radius:25px;text-align:center}
+.about-box strong{font-size:55px;color:var(--light)}
+.about p{color:var(--muted);line-height:2;margin-top:15px}
+.contact{text-align:center;background:linear-gradient(180deg,#08080d,#17102a)}
+.contact h2{font-size:38px}
+.contact p{color:var(--muted);margin:15px 0 30px}
+footer{border-top:1px solid #ffffff12;padding:30px 0;text-align:center;color:var(--muted);font-size:13px}
+footer span{color:var(--light)}
+@media(max-width:700px){
+.links{display:none}
+.hero{min-height:580px}
+.about{grid-template-columns:1fr}
+.section-title h2{font-size:29px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+<nav>
+<a href="#" class="logo">YAMI<span>.</span>STUDIO</a>
+<div class="links">
+<a href="#home">الرئيسية</a>
+<a href="#services">خدماتنا</a>
+<a href="#projects">مشاريعنا</a>
+<a href="#about">من نحن</a>
+<a href="#contact">تواصل معنا</a>
+</div>
+<a href="#contact" class="btn">ابدأ مشروعك</a>
+</nav>
+</div>
+</header>
+
+<main>
+<div class="container">
+<section class="hero" id="home">
+<div class="hero-content">
+<div class="badge">✦ نحو مستقبل رقمي أفضل</div>
+<h1>نحوّل أفكارك إلى <span>واقع رقمي</span></h1>
+<p>نحن YAMI STUDIO، فريق متخصص في تصميم وتطوير المواقع الإلكترونية والتطبيقات، نصنع حلولاً رقمية تجمع بين الإبداع والتكنولوجيا.</p>
+<div class="hero-buttons">
+<a href="#contact" class="btn">اطلب مشروعك الآن ↗</a>
+<a href="#projects" class="outline">اكتشف أعمالنا</a>
+</div>
+</div>
+</section>
+</div>
+
+<section id="services">
+<div class="container">
+<div class="section-title">
+<h2>خدماتنا</h2>
+<p>حلول تقنية متكاملة لتطوير أعمالك</p>
+</div>
+<div class="grid">
+<div class="card">
+<div class="icon">🌐</div>
+<h3>تصميم المواقع</h3>
+<p>مواقع إلكترونية احترافية وسريعة ومتجاوبة مع جميع الأجهزة.</p>
+</div>
+<div class="card">
+<div class="icon">📱</div>
+<h3>تطوير التطبيقات</h3>
+<p>تطبيقات عصرية توفر تجربة استخدام سهلة ومميزة.</p>
+</div>
+<div class="card">
+<div class="icon">⚙️</div>
+<h3>الأنظمة الإدارية</h3>
+<p>أنظمة ذكية لإدارة العملاء والطلبات والعمليات اليومية.</p>
+</div>
+<div class="card">
+<div class="icon">🎨</div>
+<h3>التصميم الإبداعي</h3>
+<p>هويات بصرية وواجهات مستخدم تعكس هوية مشروعك.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="projects" id="projects">
+<div class="container">
+<div class="section-title">
+<h2>أعمالنا ومشاريعنا</h2>
+<p>بعض المجالات التي نعمل عليها</p>
+</div>
+<div class="grid">
+<div class="project">
+<div class="project-image">🛒</div>
+<div class="project-info">
+<h3>المتاجر الإلكترونية</h3>
+<p>تجارب تسوق رقمية متكاملة.</p>
+</div>
+</div>
+<div class="project">
+<div class="project-image">🏢</div>
+<div class="project-info">
+<h3>مواقع الشركات</h3>
+<p>واجهات احترافية للشركات والمؤسسات.</p>
+</div>
+</div>
+<div class="project">
+<div class="project-image">📊</div>
+<div class="project-info">
+<h3>لوحات التحكم</h3>
+<p>إدارة ومتابعة الأعمال من مكان واحد.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container about">
+<div>
+<div class="section-title" style="text-align:right;margin-bottom:10px">
+<h2>من نحن؟</h2>
+</div>
+<p>YAMI STUDIO هو استوديو تقني يسعى إلى تقديم حلول رقمية مبتكرة تساعد الأفراد والشركات على تطوير أعمالهم والدخول إلى العالم الرقمي.</p>
+<p>نؤمن أن كل فكرة تستحق أن تتحول إلى مشروع حقيقي، ولهذا نعمل على الجمع بين التصميم والتقنية لصناعة تجارب استثنائية.</p>
+</div>
+<div class="about-box">
+<strong>YAMI.</strong>
+<h3>نبتكر اليوم، لنصنع المستقبل.</h3>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="container">
+<h2>لديك فكرة مشروع؟</h2>
+<p>دعنا نساعدك في تحويل فكرتك إلى مشروع رقمي حقيقي.</p>
+<a href="https://wa.me/964XXXXXXXXXX" class="btn" target="_blank">تواصل معنا عبر واتساب ↗</a>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<p>© 2026 <span>YAMI STUDIO</span> — جميع الحقوق محفوظة.</p>
+</div>
+</footer>
+
+</body>
+</html>
+```
